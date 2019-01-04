@@ -33,11 +33,11 @@ class ViewController: UIViewController {
     
     var add = 0
     
-    var re = 0//判断result.text前是否存在符号
+    var xsd = 0//判断result.text前是否存在符号
     
     
     @IBAction func number1(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "1"
             
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number2(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "2"
             
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number3(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "3"
             
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number4(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "4"
             
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number5(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "5"
             
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number6(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "6"
             
@@ -115,7 +115,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number7(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "7"
             
@@ -128,7 +128,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number8(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "8"
             
@@ -141,7 +141,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number9(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "9"
             
@@ -154,7 +154,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number0(_ sender: Any) {
-        if re == 1{
+        if xsd == 1{
             
             result.text = "0"
             
@@ -175,8 +175,9 @@ class ViewController: UIViewController {
     
     @IBAction func clear(_ sender: Any) {
         result.text = ""
-        
-        re = 0
+        result_1.text = ""
+        result_2.text = ""
+        xsd = 0
         
     }
     
@@ -220,11 +221,11 @@ class ViewController: UIViewController {
                 
             }else {
                 
-                result_1.text = String(format:"%.0f", d)
+                result_1.text = String(format:"%.2f", d)
                 
             }
             
-            re = 1
+            xsd = 1
             number = 1
             judge = 0
             
@@ -245,7 +246,7 @@ class ViewController: UIViewController {
                 
                 number = 1
                 
-                re = 0
+                xsd = 0
                 
                 add=1
                 
@@ -295,11 +296,11 @@ class ViewController: UIViewController {
                 
             }else {
                 
-                result_1.text = String(format:"%.0f", d)
+                result_1.text = String(format:"%.2f", d)
                 
             }
             
-            re = 1
+            xsd = 1
             number = 2
             judge = 0
             
@@ -320,7 +321,7 @@ class ViewController: UIViewController {
                 
                 number = 2
                 
-                re = 0
+                xsd = 0
                 
                 add=1
                 
@@ -370,11 +371,11 @@ class ViewController: UIViewController {
                 
             }else {
                 
-                result_1.text = String(format:"%.0f", d)
+                result_1.text = String(format:"%.2f", d)
                 
             }
             
-            re = 1
+            xsd = 1
             number = 3
             judge = 0
             
@@ -395,7 +396,7 @@ class ViewController: UIViewController {
                 
                 number = 3
                 
-                re = 0
+                xsd = 0
                 
                 add = 1
                 
@@ -446,11 +447,11 @@ class ViewController: UIViewController {
                 
             }else {
                 
-                result_1.text = String(format:"%.0f", d)
+                result_1.text = String(format:"%.2f", d)
                 
             }
             
-            re = 1
+            xsd = 1
             number = 4
             judge = 0
             
@@ -471,7 +472,7 @@ class ViewController: UIViewController {
                 
                 number = 4
                 
-                re = 0
+                xsd = 0
                 
                 add = 1
                 
@@ -488,7 +489,7 @@ class ViewController: UIViewController {
         
         result.text = String(count2)
         
-        re = 0
+        xsd = 0
         
     }
     
@@ -499,7 +500,7 @@ class ViewController: UIViewController {
         
         result.text = String(count2)
         
-        re = 0
+        xsd = 0
         
     }
     
@@ -542,11 +543,11 @@ class ViewController: UIViewController {
             
         }else {
             
-            result.text = String(format:"%.0f", d)
+            result.text = String(format:"%.2f", d)
             
         }
         
-        re = 1
+        xsd = 1
         
         judge = 0
         
